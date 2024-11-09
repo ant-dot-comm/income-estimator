@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'antd/dist/antd.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,9 +11,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2B3977;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.custom-slider .ant-slider-track {
+  background-color: var(--slider-track-color) !important; /* Set your desired track color here */
+}
+
+.custom-slider .ant-slider-step {
+  background-color: var(--slider-step-color) !important; /* Set your desired inactive step color here */
+}
+
+.custom-slider .ant-slider-handle {
+  border-color: var(--slider-track-color) !important; /* Set handle color to match track color */
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #333333 !important; /* Set your desired checkbox color here */
 }
